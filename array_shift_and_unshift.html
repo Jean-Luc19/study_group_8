@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>Array Pop and Push</title>
+</head>
+<body>
+
+  Let's build our version of the Array.prototype.shift() and Array.prototype.unshift() methods that manipulates the contents of an array starting from the first index. 
+
+  The shift function removes the first element of an array and returns it. 
+
+  The unshift function adds one or more elements to the start of an array and returns the new length. 
+
+  Both shift and unshift mutate the original array.
+
+  Return undefined if the array passed to shift has length 0
+
+</body>
+<script>
+
+
+
+
+
+
+
+  shift([1, 2, 3]);                // 1
+  shift([]);                       // undefined
+  shift([[1, 2, 3], 4 ,5]);        // [1, 2, 3]
+
+  unshift([1, 2, 3], 5, 6);        // 5
+  unshift([1, 2, 3]);              // 3
+  unshift([4, 5], [1, 2 ,3]);      // 3
+
+  var testArray = [1, 2, 3];
+  shift(testArray);                // 1
+  testArray;                       // [2, 3]
+  unshift(testArray, 5);           // 3
+  testArray;                       // [5, 2, 3]
+
+
+</script>
+</html>
